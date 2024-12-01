@@ -22,7 +22,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = 'django-insecure-%bw^h6z+d*hhyr3k6$nhicu5t9vy9=_96#(t)#m%8=kux%l&$x'
 SECRET_KEY = config('SECRET_KEY', default='django-insecure-default-key')
 
 
@@ -83,16 +82,6 @@ WSGI_APPLICATION = 'EVENTAPI.wsgi.application'
 #     'default': {
 #         'ENGINE': 'django.db.backends.sqlite3',
 #         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'event_api_db',
-#         'USER': 'event_api_user',
-#         'PASSWORD': 'Event@123',
-#         'HOST': 'localhost',
-#         'PORT': '5432',    
 #     }
 # }
 DATABASES = {
